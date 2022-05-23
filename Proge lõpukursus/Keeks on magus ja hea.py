@@ -37,38 +37,12 @@ def sort_list(string_list: list) -> list:
         new_string_list += [new_word]
     new_string_list.sort(key=len, reverse=True)
     return(new_string_list)
-    '''
-    cycle = new_string_list
-    longest_list = []
-    for i in cycle:
-        cycleingmech = []
-        longest_word = ""
-        for x in cycle:
-            if len(x) > len(longest_word):
-                cycleingmech += [longest_list]
-                longest_word = x
-                longest_list = [x]
-            elif len(x) == len(longest_word):
-                longest_list += [x]
-            else:
-                cycleingmech += [x]
-            print(longest_word)
-        cycle = cycleingmech
-    print(longest_list)
-    '''
+
 def one_set_contains_another(set1: set, set2: set) -> bool:
     if set1 ^ set2:
         print("True")
     else:
         print("False")
-'''
-def organise_by_first_symbol(strings: list) -> dict:
-    dictionary = {}
-    for x in strings:
-            dictionary[x[0]] += [x]
-    return(dictionary)
-print(organise_by_first_symbol(["hello", "word", "world", "welcome", "yes"]))
-'''
 
 def spiraal():
     while True:
