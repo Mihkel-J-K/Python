@@ -29,8 +29,8 @@ def find_fastest_growing(tweets: list) -> Tweet:
     Find the fastest growing tweet.
 
     A tweet is the faster growing tweet if its "retweets/time" is bigger than the other's.
-    >Tweet1 is 32.5 hours old and has 64 retweets.
-    >Tweet2 is 3.12 hours old and has 30 retweets.
+    >Tweet1 is 32.5 hours old or broken and has 64 retweets.
+    >Tweet2 is 3.12 hours old or broken and has 30 retweets.
     >64/32.5 is smaller than 30/3.12 -> tweet2 is the faster growing tweet.
 
     :param tweets: Input list of tweets.
